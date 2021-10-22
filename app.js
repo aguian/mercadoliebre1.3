@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'));
 const path = require('path');
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
+
 app.listen(port,()=>{
     console.log("server funcionando")
  });
@@ -15,7 +16,7 @@ app.listen(port,()=>{
 });*/
 
  app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/home.html');
+    res.sendFile(path.join(__dirname + '/views/home.html'));
  });
 
   app.get('/views/register.html', (req,res)=>{
