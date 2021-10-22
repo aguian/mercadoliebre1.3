@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/99d2f24388.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet" />
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');</style>
+
+    <title>MercadoLiebre</title>
+</head>
+<header class="main-header">
+    <div class="main-header-top-bar">
+        <img src="/imagenes/logo-mercado-liebre.svg" class="logo">
+</header>
+<body>
+    <form action="/" method="#" class="creater-form">
+
+        <div class="control-formulario">
+            <input type="text" name="nombre" placeholder="Nombre y apellido" minlength="2" maxlength="10" class="control">
+            <input type="text" name="usuario" placeholder="Nombre de usuario"  minlength="2" maxlength="10" class="control">
+            <input type="email" name="email" placeholder="E-mail" class="control">
+        </div> 
+
+        <div class="control-formulario">
+            <label>Fecha de nacimiento: </label>
+            <input type="date" name="fecha" class="control">
+
+            <input type="text" name="domicilio" placeholder="Domicilio" class="control">
+        </div> 
+
+        <div>
+            <h2>Perfil del usuario</h2>
+        </div>
+
+        <div class="control-formulario-perfil"> 
+            <input type="radio" name="comprador" value="Comprador" >
+            <label class="perfil-comprador">comprador</label>          
+            <input type="radio" name="vendero" value="Vendedor">
+            <label class="perfil-comprador">vendedor</label>
+        </div> 
+
+        <h2>intereses</h2>
+
+        <div class="control-formulario-interes">
+            <div class="div-checkbox">
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Electro</label>
+            </div>
+
+            <div class="div-checkbox">
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Moda</label>
+            </div>
+
+            <div class="div-checkbox">
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Hogar</label>
+            </div>
+
+            <div class="div-checkbox">
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Juguetería</label>
+            </div>
+
+             <div class="div-checkbox">
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Vida sana </label>
+            </div>
+
+        </div>
+
+        <div class="control-formulario-file"> 
+            <label>Selecciones una foto de perfil: </label>
+            <input type="file" name="avatar" accept=".jpg">
+        </div>
+        
+        <div class="control-formulario">
+            <label>Constraseña</label>
+            <input type="password" name="clave" class="control">
+            <label>Confirmar constraseña</label>
+            <input type="password" name="clave" class="control">
+        </div>
+
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit"class="boton-formulario">Enviar</button>
+        </form>
+
+</body>
+</html>
+
